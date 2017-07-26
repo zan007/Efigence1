@@ -1,0 +1,31 @@
+$white: #ffffff;
+$box_color: #13bdd2;
+
+body{
+	background-image: url(../img/efi3.jpg);
+}
+
+.box_logo {
+	img{
+	padding-left: 296px;
+	margin-top: 84px;
+	}
+}
+.box_login{
+	background-color: $box_color;
+	margin-top: 42px;
+	width: 546px;
+	height: 606px;
+
+	p{
+		text-align: center;
+		color: $white;
+	}
+	h1{
+		text-align: center;
+		color: $white;
+	}
+	img{
+		
+	}
+}
