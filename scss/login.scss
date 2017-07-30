@@ -1,31 +1,148 @@
 $white: #ffffff;
 $box_color: #13bdd2;
 
-body{
-	background-image: url(../img/efi3.jpg);
+@mixin text_box{
+	text-align: center;
+	color: $white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
 }
 
-.box_logo {
+body{
+	background-image: url(../img/efi3.jpg);
+	background-size: cover;
+}
+
+.box_logo{
 	img{
-	padding-left: 296px;
-	margin-top: 84px;
+		margin-left: 100px;
+		margin-top: 42px;
+		border: 1px solid $white;
+		padding: 42px 32px;
+		border-radius: 4px;
+	}
+	img:hover{
+		transform: scale(0.95);
+		transition: 0.4s;
 	}
 }
 .box_login{
 	background-color: $box_color;
-	margin-top: 42px;
+	margin-top: 42px; 
 	width: 546px;
 	height: 606px;
+	border-radius: 4px;
+	padding: 36px 28px 125px; 
 
 	p{
-		text-align: center;
-		color: $white;
+		@include text_box;
+		font-size: 15px;
+		height: 16px;
+		margin-bottom: 0px;
 	}
 	h1{
-		text-align: center;
+		@include text_box;
+		font-size: 40px;
+		height: 40px;
+	}
+	.avatar{
+		position: absolute;
+		padding: 89px 198px;
+		width: 489px;
+		img{
+			border-radius: 47px;
+			width: 94px;
+			height: 94px;
+		}
+	}
+	form{
+		width: 489px;
+		height: 253px;
+		border: 1px solid rgba(255,255,255,0.3);
+		border-radius: 4px;
+		padding: 74px 22px;
+		margin-top: 135px;
+	}
+	.login_insert{
+		padding: 0px 163px;
+		position: relative;
+		margin-bottom: 21px;
+		p {
+			display: inline-block;
+			position: relative;
+			font-size: 18px;
+			height: 22px;
+			width: 83px;
+			margin-bottom: 0px;
+			margin-right: 11px;
+			font-weight: 700;
+		}
+		button{
+			width: 18px;
+			height: 18px;
+			background-color: rgba(255,255,255,0.3);
+			border-radius: 100%;
+			color: $white;
+			font-weight: 700;
+		}
+		button:hover{
+			color: #000000;
+			background-color: $white;
+			cursor: pointer;
+		}
+	
+	}
+	input{
+		width: 409px;
+		height: 35px;
+		display: inline-block;
+		margin-bottom: 22px;
+	}
+	.keyboard{
+			margin-left: 3px;
+		 	position: relative;
+		 	z-index: 1;
+		}
+	.keyboard:hover{
+		transform: scale(1.1);
+		transition: 0.4s;
+		cursor: pointer;
+	}
+	.button_go{
+		width: 118px;
+		height: 31px;
+		font-size: 15px;
+		font-weight: 300;
+		background-color: $white;
+		border-radius: 4px;
+		color: #000000;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.button_go:hover{
+		cursor: pointer;
+		background-color: rgba(255,255,255,0.3);
 		color: $white;
 	}
-	img{
-		
+	.button_select_other{
+		width: 118px;
+		height: 31px;
+		border-radius: 4px;
+		font-size: 14.5px;
+		font-weight: 300;
+		color: $white;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.button_select_other:hover{
+		cursor: pointer;
+		color: #000000;
+	}
+}
+nav{
+	a{
+		text-decoration: none;
+		color: $white;
+		font-size: 11px;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 700;
 	}
 }
