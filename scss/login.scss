@@ -67,7 +67,6 @@ body{
 		margin-top: 135px;
 	}
 	.login_insert{
-		padding: 0px 163px;
 		position: relative;
 		margin-bottom: 21px;
 		p {
@@ -79,6 +78,7 @@ body{
 			margin-bottom: 0px;
 			margin-right: 11px;
 			font-weight: 700;
+			margin-left: 163px;
 		}
 		button{
 			width: 18px;
@@ -87,6 +87,12 @@ body{
 			border-radius: 100%;
 			color: $white;
 			font-weight: 700;
+		}
+		input{
+		width: 409px;
+		height: 35px;
+		margin-bottom: 22px;
+		font-family: $main_font;
 		}
 		button:hover{
 			color: $black;
@@ -100,6 +106,8 @@ body{
 		height: 35px;
 		display: inline-block;
 		margin-bottom: 22px;
+		border: 1px solid #ffffff;
+		font-family: $main_font;
 	}
 	.keyboard{
 			margin-left: 3px;
