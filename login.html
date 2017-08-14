@@ -25,26 +25,29 @@
           <div class="avatar">
           <img src="img/avatar.png" alt="user_photo"/>
           </div>
-          <form>
+          <form class="main_form">
               <div class="small-12 login_insert">
-                <input type="text" name="login_input" class="login_input" placeholder="Login..." ">
+                <input type="text" name="login_input" class="login_input" placeholder="Wprowadź login" ">
                 <div class="login_div" style="display: none">
                 <p class="login_number">123456789</p>
                 <button class="close_button">x</button>
                 </div>
               </div>
-              <input type="text" name="password_input" class="submit" placeholder="Hasło..." />
+              <input type="password" name="password_input" class="submit" placeholder="Wprowadź hasło" />
                 <img class="keyboard" src="img/keyboard.png">
               <div class="row align-center">
-                <button class="column small-4 large-3 button_select_other">SELECT OTHER</button>
-                <button class="column small-4 large-3 button_go">GO</button>
+                <div class="row align-center error_message" style="display: none">
+                <p class="error_text"></p>
+                </div>
+                <button class="column small-4 large-3 button_select_other">WYBIERZ INNE</button>
+                <button class="column small-4 large-3 button_go">ZALOGUJ</button>
               </div>
           </form>
         </div>
         <nav>
-        <a href="#">Security</a>
-        <a href="#">Loggin in</a>
-        <a href="#">Other</a>
+        <a href="#">Bezpieczeństwo</a>
+        <a href="#">Logowanie</a>
+        <a href="#">Inne</a>
         </nav>
       </div>
     </div>
