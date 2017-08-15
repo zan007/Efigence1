@@ -1,10 +1,10 @@
-$white: #ffffff;
+$white: #ffffff; //wrzuc kolorki do oddzielnego pliku i zaimportuj gdzie trzeba, będą tam commonowe kolory
 $box_color: #13bdd2;
 $box_color_light: rgba(255,255,255,0.3);
 $black: #000000;
-$main_font: 'Roboto Condensed', sans-serif;
+$main_font: 'Roboto Condensed', sans-serif; //główny krój czcionki raczej jest niezmienny, ustaw ją w takim razie w stylu do body
 
-@mixin text_box{
+@mixin text_box{ //spacja przed {, popraw tez w innych miejscach
 	text-align: center;
 	color: $white;
 	font-family: $main_font;
@@ -36,7 +36,7 @@ body{
 	height: 606px;
 	border-radius: 4px;
 	padding: 36px 28px 125px; 
-
+	
 	p{
 		@include text_box;
 		font-size: 15px;
